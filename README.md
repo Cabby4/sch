@@ -4,7 +4,7 @@ A production-ready backend API for managing tasks, tracking user progress, and g
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This API allows users to:
 
@@ -18,7 +18,7 @@ Built with scalability and frontend integration in mind.
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 * Node.js
 * Express.js
@@ -63,7 +63,7 @@ JWT_SECRET=your_super_secret_key
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 
@@ -104,9 +104,9 @@ Authorization: Bearer <your_token>
 
 ---
 
-## 📡 API Endpoints
+## API Endpoints
 
-### 🧑‍💻 Auth
+### Auth
 
 #### Register User
 
@@ -122,7 +122,7 @@ POST /api/auth/login
 
 ---
 
-### 📋 Tasks
+### Tasks
 
 #### Get All Tasks
 
@@ -146,7 +146,7 @@ POST /api/task/complete
 
 ---
 
-### 📊 Analytics
+### Analytics
 
 #### Get User Progress
 
@@ -167,7 +167,7 @@ GET /api/user/progress
 
 ---
 
-## 🧪 Testing
+## Testing
 
 Used Postman and Thunder Client to test endpoints.
 
@@ -182,7 +182,7 @@ Used Postman and Thunder Client to test endpoints.
 
 ---
 
-## 🖼️ API Testing Screenshots
+## API Testing Screenshots
 
 ### Register User
 
@@ -202,14 +202,14 @@ Used Postman and Thunder Client to test endpoints.
 
 ### User Progress
 
-![Progress](doc/screenshots/progress-endpoint.png)
+![progress](doc/screenshots/progress.png)
 
 ### Analytics Dashboard
 ![Dashboard](doc/screenshots/analytics dashboard.png>)
 
 ---
 
-## 🧠 Design Decisions
+## Design Decisions
 
 * Separation of concerns (MVC pattern)
 * Input validation using Joi
@@ -218,7 +218,7 @@ Used Postman and Thunder Client to test endpoints.
 
 ---
 
-## ⚠️ Error Handling
+##  Error Handling
 
 Standard error response:
 
@@ -231,7 +231,7 @@ Standard error response:
 
 ---
 
-## 📌 Notes for Frontend Engineers
+## Notes for Frontend Engineers
 
 * Base URL: `http://localhost:001/api`
 * All protected routes require JWT
@@ -240,19 +240,19 @@ Standard error response:
 
 ---
 
-## 📦 Deployment
+##  Deployment
 
 Render.
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 Pull requests are welcome. For major changes, open an issue first.
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
@@ -262,3 +262,4 @@ This project is licensed under the MIT License.
 
 Built by Caleb Emerelauwaonu and 
 Chukwuma Ejike
+
