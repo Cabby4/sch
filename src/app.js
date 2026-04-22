@@ -15,6 +15,10 @@ app.use (cors());
 app.use (express.json());
 app.use (logger);
 
+app.get("/", (req,res) => {
+    res.send("API is running");
+})
+
 app.use("/api", taskRoutes);
 app.use("/api", userRoutes);
 
