@@ -39,7 +39,7 @@ const getTasks = async (req, res) => {
 };
 
 
-// POST /task/complete (validated + protected)
+// POST /task/complete
 const completeTask = async (req, res) => {
   try {
     const { error } = completeTaskSchema.validate(req.body);
@@ -83,7 +83,7 @@ const completeTask = async (req, res) => {
 };
 
 
-// GET /user/progress (user-specific)
+// GET /user/progress
 const getUserProgress = async (req, res) => {
   try {
     const totalTasks = await Task.countDocuments({ user: req.user.id });
@@ -148,7 +148,7 @@ const getDashboardAnalytics = async (req, res) => {
   try {
     const userId = req.user.id;
 
-    // 🔹 Basic stats
+    // Basic stats
     const totalTasks = await Task.countDocuments({ user: userId });
 
     const completedTasks = await Task.countDocuments({
@@ -163,11 +163,11 @@ const getDashboardAnalytics = async (req, res) => {
         ? 0
         : ((completedTasks / totalTasks) * 100).toFixed(2);
 
-    // 🔹 Last activity
+    // Last activity
     const lastTask = await Task.findOne({ user: userId })
       .sort({ updatedAt: -1 });
 
-    // 🔹 Tasks created per day (last 7 days)
+    // Tasks created per day (last 7 days)
     const sevenDaysAgo = new Date();
     sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 6);
 
