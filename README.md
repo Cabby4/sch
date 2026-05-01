@@ -111,13 +111,13 @@ Authorization: Bearer <your_token>
 #### Register User
 
 ```
-POST /api/auth/register
+POST /api/user/signup
 ```
 
 #### Login User
 
 ```
-POST /api/auth/login
+POST /api/user/login
 ```
 
 ---

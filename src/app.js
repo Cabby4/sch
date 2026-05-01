@@ -21,6 +21,7 @@ app.get("/", (req,res) => {
 
 app.use("/api", taskRoutes);
 app.use("/api", userRoutes);
+app.use("/api/user", userRoutes);
 
 app.use (errorHandler);
 
